@@ -1,0 +1,7 @@
+<h1>edit</h1>
+
+<%= form_with model: @todo, method: :patch, local: true do |a| %>
+<%= a.text_area :description %>
+<%= a.check_box :completed %>
+<%= a.submit "enviar" %>
+<% end %>
