@@ -2,7 +2,12 @@
 
 
 <%= link_to 'crear', todos_new_path %>
-<% @todos.each do |todo| %>
-<%= todo.description %>
-<%= todo.completed %>
+
+<% @todos.each do |t| %>
+<div class = "well">
+  <%= t.description %>
+
+  <%= t.completed %>
+  <%= link_to 'show', t %>
+</div>
 <% end %>
