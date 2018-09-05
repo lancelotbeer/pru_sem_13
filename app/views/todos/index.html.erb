@@ -10,5 +10,6 @@
   <%= t.completed %>
   <%= link_to 'show', t %>
   <%= link_to 'edit', edit_path(t) %>
+  <%= link_to 'destroy', destroy_path(t),method: :delete %>
 </div>
 <% end %>
