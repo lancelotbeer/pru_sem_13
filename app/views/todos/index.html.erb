@@ -1,5 +1,7 @@
 <h1>pag.index</h1>
 
+
+<%= link_to 'crear', todos_new_path %>
 <% @todos.each do |todo| %>
 <%= todo.description %>
 <%= todo.completado %>

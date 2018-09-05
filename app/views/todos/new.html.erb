@@ -1,0 +1,7 @@
+<h1>Pag. new</h1>
+
+<%= form_with model: @todo, local: true do |a| %>
+<%= a.text_area :description %>
+<%= a.check_box :completado %>
+<%= a.submit "enviar" %>
+<% end %>
